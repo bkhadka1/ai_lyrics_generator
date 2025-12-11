@@ -44,11 +44,14 @@ models/gpt2-lyrics/
 *.pth
 pytorch_model.bin
 
-# Data files (add your dataset separately)
-data/lyrics.csv
-data/lyrics_cleaned.csv
+# Data files (downloaded via load_data.py)
 data/*.csv
 data/*.txt
+data/*.json
+
+# Kaggle cache (managed by kagglehub)
+.kagglehub/
+*.kaggle/
 
 # Training outputs
 runs/
